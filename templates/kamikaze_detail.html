@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% block content %}
+  
+
+<div class="container">
+  <div class="row d-flex justify-content-center" style="padding: 0% 20%; text-align: center; font-family: Arial, Helvetica, sans-serif;">
+    <!-- Post Content Column -->
+    <div class="">
+      <!-- Title -->
+      <h1 class="mt-4">{{object.song_name}}</h1>
+      <hr />
+
+      <!-- Date/Time -->
+      <p>Release Date : {{object.release_date}}</p>
+
+      <hr />
+
+      <!-- Post Content -->
+      <p class="lead">
+        {{object.content1|safe}}
+      </p>
+
+      <p>
+        {{object.content2}}
+      </p>
+
+      <p>
+        {{object.content3}}
+      </p>
+
+      <hr />
+    </div>
+
+
+
+      <!-- Side Widget -->
+      <div class="card my-4">
+        <h5 class="card-header bg-secondary">About Song</h5>
+        <div class="card-body">
+          {{object.about_song1}}
+        </div>
+        <div class="card-body">
+          {{object.about_song2}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+</div>
+</body>
+
+{% endblock%}
