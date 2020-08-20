@@ -83,10 +83,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'account',
-        'USER': 'postgres',
-        'PASSWORD': '1131',
-        'HOST': 'localhost'
+        'USER': 'oozudtfwfdbnyp',
+        'PASSWORD': 'adb605fc1aeb7baf6309860f1e837f85fc538223c9834d4f8840b53c90556727',
+        'HOST': 'ec2-3-223-9-166.compute-1.amazonaws.com'
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'account',
+    #     'USER': 'postgres',
+    #     'PASSWORD': '1131',
+    #     'HOST': 'localhost'
 }
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
