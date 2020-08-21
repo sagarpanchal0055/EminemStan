@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '61=32ai#r=84bqad5coj@#9+cjn)16-awl!dcb&48i96_tw@b&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['eminemstan.herokuapp.com', '127.0.0.1']
 
@@ -83,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER': 'postgres',
+        'USER': 'viren',
         'PASSWORD': '1131',
         'HOST': 'localhost',
         'PORT': '5432'

@@ -5,7 +5,6 @@ from django.urls import reverse
 class Lyrics(models.Model):
     album_id = models.CharField(max_length = 100)
     album_name = models.CharField(max_length = 100)
-    img = models.ImageField(upload_to = 'pics')
 
     def get_absolute_url(self):
         return reverse("lyrics:lyrics-detail", kwargs = {"album_id":self.album_id})

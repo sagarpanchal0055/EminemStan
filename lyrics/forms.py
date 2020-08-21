@@ -6,6 +6,5 @@ class LyricsModelForm(forms.ModelForm):
         model = Lyrics
         fields = [
             'album_name',
-            'img',
             'album_id',
         ]
